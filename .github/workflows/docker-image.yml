@@ -20,6 +20,7 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v5
       with:
+          registry: docker.io
           push: true
           tags: rickyraindocker/ronhunk-demo-python:latest
           secrets: |
