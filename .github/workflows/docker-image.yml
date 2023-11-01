@@ -14,8 +14,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag ronhunk-demo-python:$(date +%s)
+
+
 
     - name: Build and push
       uses: docker/build-push-action@v5
