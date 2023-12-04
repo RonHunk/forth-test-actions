@@ -18,6 +18,7 @@ jobs:
   
   
   docker:
+    needs: security
     runs-on: ubuntu-latest
     steps:
       -
